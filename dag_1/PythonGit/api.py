@@ -6,3 +6,4 @@ res = rq.get('https://catfact.ninja/facts')
 print(res)
 
 feitjes = res.json()
+

@@ -1,1 +1,6 @@
-print('hello world')
+print('hllo world')
+
+def funct():
+    print(test)
+
+funct
