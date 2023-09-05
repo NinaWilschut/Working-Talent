@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* commentaar */
+        th {
+            color:green;
+        }
+
+        td {
+            color:aqua;
+            background-color: black;
+        }
+
+        #mijn-header {
+            color: aqua;
+            text-decoration: line-through;
+        }   
+
+        #header2 {
+            color:blueviolet
+        }
+
+        .class1 {
+            color: blueviolet;
+        }
+        .class2 {
+            background-color: orange;
+        }
+
+    </style>
+
+    
+    <script>
+        let a; // declaration
+        a = 6; // assignment
+        let b = 12; // intitialization
+
+        //alert(a) // popup (stopt alle javascript)
+        console.log('b = ' + b); //print in de console en de rest gaat door
+
+        //constant
+        const c = a + b;
+        console.log('c = ' + c);
+
+
+        let eerste = 3;
+        let tweede = 18;
+        let derde = 25;
+
+        let d = eerste + tweede
+        let e = tweede + derde
+        let f = eerste + derde
+
+        let g = tweede / eerste
+        let h = derde / eerste
+
+        console.log('eerste = ' + eerste);
+        console.log('tweede = ' + tweede);
+        console.log('derde = ' + derde);
+
+        console.log('d = ' + d);
+        console.log('e = ' + e);
+        console.log('f = ' + f);
+        console.log('g = ' + g);
+        console.log('h = ' + h);
+
+        //e *= 40
+
+        //function declaration
+        function add(a, b, c) {
+            res = a + b + c
+            console.log('Result = ' + res);
+        }
+
+        function devide(a, b, c) {
+            res =  a + b / c
+            console.log('Result = ' + res);
+        }
+
+        //function call
+        add(d, e, f)
+        devide(d, e, f)
+
+        function add_num() {
+            let getal1invoer = document.getElementById('getal1invoer');
+            let getal2invoer = document.getElementById('getal2invoer');
+
+            console.log(getal1invoer)
+
+            let getal1waarde = parseInt(getal1invoer.value);
+            let getal2waarde = parseInt(getal2invoer.value);
+
+            alert(getal1waarde + getal2waarde);
+        }
+    </script>
+
+
+</head>
+<body>
+    <h1 id="mijn-header">Dit is de pagina van groep 4</h1>
+
+    <p>Op deze webpagina zullen wij een aantal <span style="color: red;background-color:yellow;">componenten</span> van een html pagina laten zien.</p>
+    
+    <img src="images/wt.jpeg">
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Titel 1</th>
+                <th style="color: blue;">Titel 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cell 1</td>
+                <td>Cell 2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Footer 1</td>
+                <td>Footer 2</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <ol class="class1">
+        <li>Ordered list item 1</li>
+        <li>Ordered list item 2</li>
+    </ol>
+
+    <ul class="class2">
+        <li style="color: brown;">Unordered list item 1</li>
+        <li>Unordered list item 2</li>
+    </ul>
+
+    <h2 id="header2">Dit is de tweede header</h2>
+
+    <input type="number" value="2" id="getal1invoer">
+    <input type="number" id="getal2invoer">
+    <button type="button" onclick="add_num()">
+        Klik hier
+    </button>
+</body>
+</html>
